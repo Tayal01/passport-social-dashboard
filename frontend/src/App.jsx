@@ -18,7 +18,7 @@ function App() {
   useEffect(() => {
     const fetchPosts = async () => {
       try {
-        const response = await fetch("https://your-backend-url.onrender.com/api/posts");
+        const response = await fetch("https://passport-social-dashboard.onrender.com/api/posts");
 
         const data = await response.json();
 
@@ -110,7 +110,7 @@ function App() {
 
       <div className="flex justify-end p-8 pb-0">
         <a
-          href="https://your-backend-url.onrender.com/api/export/csv"
+          href="https://passport-social-dashboard.onrender.com/api/export/csv"
           target="_blank"
           rel="noreferrer"
           className="bg-black text-white px-6 py-3 rounded-xl shadow hover:bg-gray-800 transition"
