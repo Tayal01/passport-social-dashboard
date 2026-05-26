@@ -2,16 +2,21 @@
 
 A MERN stack based social media analytics dashboard that aggregates passport-related discussions and performs NLP-based analysis on posts.
 
-The project helps monitor social conversations related to passport services such as renewal, visa issues, Tatkal processing, appointments, and travel experiences.
+The project helps monitor passport-related social conversations such as:
+- passport renewal issues
+- visa appointment discussions
+- Tatkal passport experiences
+- travel-related passport concerns
+- appointment availability updates
 
 ---
 
 # Live Demo
 
-Frontend:
+## Frontend
 https://passport-social-dashboard.vercel.app
 
-Backend API:
+## Backend API
 https://passport-social-dashboard.onrender.com
 
 ---
@@ -19,9 +24,9 @@ https://passport-social-dashboard.onrender.com
 # Features
 
 ## Social Media Aggregation
-- Reddit-based post aggregation
-- Passport-related social discussion monitoring
-- Structured social feed dashboard
+- Reddit-based social media aggregation
+- Passport-related discussion monitoring
+- Structured analytics feed
 
 ---
 
@@ -34,24 +39,32 @@ https://passport-social-dashboard.onrender.com
 
 ---
 
-## Dashboard Features
+# API Integration Note
+
+The application architecture supports live Reddit API based social media aggregation for passport-related discussions.
+
+To maintain a stable and deterministic analytics experience during deployment and demonstration, the production demo currently utilizes structured sample data while preserving the live API integration logic within the service layer.
+
+---
+
+# Dashboard Features
+
 - Search functionality
 - Category filtering
 - Sentiment filtering
-- Analytics visualization
-- Responsive UI
+- Interactive analytics visualization
 - CSV export functionality
+- Responsive dashboard UI
 
 ---
 
 # Analytics Features
 
 The dashboard provides:
-
 - Positive / Neutral / Negative sentiment distribution
 - Passport issue categorization
-- Engagement metrics
-- Real-time dashboard analytics
+- Engagement analytics
+- Structured post insights
 
 ---
 
@@ -85,9 +98,9 @@ passport-social-dashboard/
 
 │ ├── src/
 
-│ ├── components/
+│ ├── App.jsx
 
-│ └── App.jsx
+│ └── components/
 
 │
 
@@ -117,19 +130,19 @@ GET
 
 Returns:
 - social media posts
-- sentiment data
-- category data
-- NLP processed analytics
+- category analytics
+- sentiment analytics
+- NLP processed insights
 
 ---
 
-## Export CSV
+## Export CSV Report
 
 GET
 
 /api/export/csv
 
-Downloads analytics report in CSV format.
+Downloads dashboard analytics report in CSV format.
 
 ---
 
@@ -137,10 +150,11 @@ Downloads analytics report in CSV format.
 
 1. Fetch social media posts
 2. Process NLP analysis
-3. Generate categories
+3. Detect categories
 4. Detect sentiment
-5. Display analytics
-6. Enable filtering & export
+5. Generate analytics
+6. Display dashboard insights
+7. Export CSV reports
 
 ---
 
@@ -158,10 +172,10 @@ Deployed on Render
 
 - YouTube API integration
 - Twitter/X integration
-- MongoDB database storage
+- MongoDB database integration
 - Authentication system
-- AI-generated summaries
 - Real-time analytics
+- AI-generated summaries
 - Advanced NLP models
 
 ---
