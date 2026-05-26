@@ -18,7 +18,7 @@ function App() {
   useEffect(() => {
     const fetchPosts = async () => {
       try {
-        const response = await fetch("http://localhost:8000/api/posts");
+        const response = await fetch("https://your-backend-url.onrender.com/api/posts");
 
         const data = await response.json();
 
